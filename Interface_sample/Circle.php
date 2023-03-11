@@ -8,10 +8,9 @@ require_once('Shape.php');
  */
 class Circle implements Shape
 {
-    public const PI = 3.14;
-    private readonly int $radius;
+    private readonly float $radius;
 
-    public function __construct(int $radius)
+    public function __construct(float $radius)
     {
         $this->radius = $radius;
     }
@@ -19,8 +18,8 @@ class Circle implements Shape
     /**
      * 面積
      */
-    public function area(): int
+    public function area(): float
     {
-        return $this->radius * $this->radius * self::PI;
+        return $this->radius * $this->radius * pi();
     }
 }

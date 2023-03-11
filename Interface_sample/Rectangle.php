@@ -8,10 +8,10 @@ require_once('Shape.php');
  */
 class Rectangle implements Shape
 {
-    private readonly int $width;
-    private readonly int $height;
+    private readonly float $width;
+    private readonly float $height;
 
-    public function __construct(int $width, int $height)
+    public function __construct(float $width, float $height)
     {
         $this->width = $width;
         $this->height = $height;
@@ -20,7 +20,7 @@ class Rectangle implements Shape
     /**
      * 面積
      */
-    public function area(): int
+    public function area(): float
     {
         return $this->width * $this->height;
     }
