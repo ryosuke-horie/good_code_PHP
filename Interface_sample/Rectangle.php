@@ -1,4 +1,6 @@
 <?
+declare(strict_types=1);
+
 require_once('Shape.php');
 
 /**
@@ -8,6 +10,12 @@ class Rectangle implements Shape
 {
     private readonly int $width;
     private readonly int $height;
+
+    public function __construct(int $width, int $height)
+    {
+        $this->width = $width;
+        $this->height = $height;
+    }
 
     /**
      * 面積

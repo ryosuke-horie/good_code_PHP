@@ -1,4 +1,5 @@
 <?
+declare(strict_types=1);
 
 /**
  * 図形インターフェース

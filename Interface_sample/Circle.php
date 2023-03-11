@@ -1,4 +1,6 @@
 <?
+declare(strict_types=1);
+
 require_once('Shape.php');
 
 /**
@@ -8,6 +10,11 @@ class Circle implements Shape
 {
     public const PI = 3.14;
     private readonly int $radius;
+
+    public function __construct(int $radius)
+    {
+        $this->radius = $radius;
+    }
 
     /**
      * 面積
